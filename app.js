@@ -18,6 +18,18 @@ app.get('/',(req, res) =>{
     res.render('index');
 });
 
+
+app.get('/hello',(req,res) => {
+    res.render('hello');
+});
+
+
+app.post('/hello',(req,res) => {
+    res.render('hello');
+});
+
+
+
 app.get('/card',(req, res) =>{
    // res.locals.prompt = "What'sasdasdasdsadasd";  
    // res.render('card');  
