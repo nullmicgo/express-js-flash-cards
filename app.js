@@ -7,12 +7,6 @@ const app = express();
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cookieParser());
 
-app.use((req,res,next) =>{
-    console.log('Hello');
-    const err = new Error('Oh noes!');
-    err.status = 500;
-    next(err);
-});
 
 app.use((req,res,next) =>{
     console.log('world');
@@ -84,6 +78,12 @@ app.get('/card',(req, res) =>{
 
 // /sandbox
 
+
+app.use((req,res,next) =>{
+    const err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+});
 
 
 app.use((err, req, res, next) =>{
