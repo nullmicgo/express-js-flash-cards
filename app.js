@@ -7,6 +7,13 @@ const app = express();
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cookieParser());
 
+app.use((req,res,next) =>{
+    console.log('One');;
+    next(); 
+});
+
+
+
 const colors = [
     'red',
     'oragne',
@@ -38,6 +45,11 @@ app.get('/hello',(req,res) => {
  });
 
  
+
+ app.post('/goodbye', (req, res) =>{
+    res.clearCookie('username');
+    res.redirect('/hello');
+ });
 
 
 app.post('/hello',(req,res) => {
