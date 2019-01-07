@@ -10,6 +10,7 @@ app.use(cookieParser());
 app.use((req,res,next) =>{
     console.log('Hello');
     const err = new Error('Oh noes!');
+    err.status = 500;
     next(err);
 });
 
@@ -87,8 +88,10 @@ app.get('/card',(req, res) =>{
 
 app.use((err, req, res, next) =>{
     res.locals.error = err;
-    res.status(500);
-    res.render('error',err);
+    //res.status(err.status);
+    //res.status(500);
+    res.status(err.status);
+    res.render('error');
 });
 
 
