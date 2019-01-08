@@ -1,7 +1,13 @@
 # express-js-flash-cards
 
 
-
+Learn how to use Express.js to build dynamic websites on the Node.js platform. 
+- Installing and Setting up Express
+- Pug Templating
+- Routing in Express
+- HTTP GET and POST
+- Basic Form Processing
+- Middleware
 
 
 
