@@ -1,27 +1,18 @@
 {
-  "name": "express-js-flash-cards",
+  "name": "flashcards",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nullmicgo/express-js-flash-cards.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nullmicgo/express-js-flash-cards/issues"
-  },
-  "homepage": "https://github.com/nullmicgo/express-js-flash-cards#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
-    "express": "^4.16.4",
-    "nodemon": "^1.18.9",
-    "pug": "^2.0.3"
+    "express": "^4.15.2",
+    "pug": "^2.0.0-rc.1"
   }
 }
