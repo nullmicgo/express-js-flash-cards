@@ -1,13 +1,13 @@
 {
-  "name": "flashcards",
+  "name": "express-js-flash-cards",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learn how to use Express.js to build dynamic websites on the Node.js platform.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michael Lau",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
